@@ -1,50 +1,62 @@
-<html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<title>自己紹介</title>
-</head>
+<!DOCTYPE html>
+  <html lang="js">
+    <head>
+      <meta charset=utf-8>
+      <meta name="viewprot" content="width=device-width, initial-scale=1.0">
+      <title>自己紹介</title>
+      <link rel = "stylesheet" href = "css/okastyle.css">
+    </head>
+  <body>
+    <h1>班　員　紹　介</h1><br><br>
 
-<body>
-<h1>　　　　自　　己　　紹　　介</h1>
-<hr>
-    <div class="photo">
-        <img src=>
+    <img id="image" src="image/sample1.jpg" alt="画像" style="border: double;" />
+    <button id="button">表示/非表示</button>
+
+  <script>
+    document.addEventListener('DOMContentLoaded',function(){
+      var image = document.getElementById('image');
+      var togglebutton = document.getElementById('button');
+
+    togglebutton.addEventListener('click',function() {
+	    if(image.style.display === 'none'){
+		    image.style.display ='block';
+	    }else{
+		    image.style.display ='none';
+      }
+	    });
+    });
+  </script>
+  </div>
+
+    <div class = "syokai">
+      <p>名前：岡来未</p><br>
+      <p>出身地：岡山</p><br>
+      <p>趣味：ネットフリックス</p><br>
+      <p>好きな音楽：THE ORAL CIGARETTES</p><br>
+      <p>好きな本：都市伝説大百科</p><br>
+      <p>好きな飲み物：アップルティー</p><br>
+      <p>嫌いな食べ物：ミルメーク</p><br>
     </div>
-<table border="0" cellpadding="10" cellspacing="0">
-  <tr>
-    <td align="right">名前：</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td align="right">誕生日：</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td align="right">出身地：</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td align="right">趣味：</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td align="right">好きな音楽：</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td align="right">好きな本：</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td align="right">好きな飲み物：</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td align="right">嫌いな食べ物：</td>
-    <td></td>
-  </tr>
-</table>
-<hr>
-<p align="center"><a href="index.html">TOPへ</a></p>
-</body>
+
+    <hr>
+      <h2>班員からのコメント</h2>
+    <hr>
+      <h3>ほかの班員</h3>
+    <nav class = "nav">
+       <div class="menu">
+	      <ul>
+		      <ol><a href ="yoneda.html">米田</a></ol>
+		      <ol><a href ="nagase.html">長瀬</a></ol>
+		      <ol><a href ="sanaka.html">佐中</a></ol>
+		      <ol><a href ="oota.html">太田</a></ol>
+		     <ol><a href ="umemura.html">梅村</a></ol>
+	      </ul>
+      </div>
+    </nav>
+
+    <p align="center"><a href="index.html">TOP</a></p>
+
+    <script src="oka.js"></script>
+
+  </body>
 </html>
