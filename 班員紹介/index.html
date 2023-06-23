@@ -3,11 +3,24 @@
 <head>
 	<meta charset="UTF-8">
 	<title>班員紹介:TOP</title>
+	<link href="style.css" rel="stylesheet" media="all">
+	<script>
+	function showClock1(){
+	var nowTime = new Date();
+	var nowHour = nowTime.getHours();
+	var nowMin = nowTime.getMinutes();
+	var nowSec = nowTime.getSeconds();
+	var msg = "現在時刻は、" + nowHour +":"+ nowMin+":"+ nowSec +"です。";
+	document.getElementById("RealtimeClockArea").innerHTML = msg;
+	}
+	setInterval('showClock1()',1000);
+	</script>
 	<link href="style.css" rel="stylesheet">
 </head>
 
 <main>
 	<h2>班員紹介</h2>
+	<p id="RealtimeClockArea"></p>
 	<ul>
 		<li><a href = "umemura.html">梅村慎吾</a></li>
 		<li><a href = "oota.html">太田善晴</a></li>
