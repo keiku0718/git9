@@ -4,16 +4,41 @@
 	<meta charset="UTF-8">
 	<title>班員紹介:TOP</title>
 	<link href="style.css" rel="stylesheet" media="all">
+	<script>
+	function showClock1(){
+	var nowTime = new Date();
+	var nowHour = nowTime.getHours();
+	var nowMin = nowTime.getMinutes();
+	var nowSec = nowTime.getSeconds();
+	var msg = "現在時刻は、" + nowHour +":"+ nowMin+":"+ nowSec +"です。";
+	document.getElementById("RealtimeClockArea").innerHTML = msg;
+	}
+	setInterval('showClock1()',1000);
+	</script>
+	<link href="style.css" rel="stylesheet">
 </head>
 
 <main>
 	<h2>班員紹介</h2>
+	<p id="RealtimeClockArea"></p>
 	<ul>
-		<li><a href = "umemura.html">梅村慎吾</li>
-		<li><a href = "oota.html">太田善治</li>
-		<li><a href = "oka.html">岡来未</li>
-		<li><a href = "sanaka.html">佐中光希</li>
-		<li><a href = "nagase.html">長瀬稜平</li>
-		<li><a href = "yoneda.html">米田圭伸</li>
+		<li><a href = "umemura.html">梅村慎吾</a></li>
+		<li><a href = "oota.html">太田善晴</a></li>
+		<li><a href = "oka.html">岡来未</a></li>
+		<li><a href = "sanaka.html">佐中光希</a></li>
+		<li><a href = "nagase.html">長瀬稜平</a></li>
+		<li><a href = "yoneda.html">米田圭伸</a></li>
 	</ul>
+	<div><input type="text" id="name" name="name" maxlength="8" size="10"></div>
+	<div><button onclick="alertEvent()">アラート</button></div>
+	<script>
+		function alertEvent() {
+			var value = document.getElementById("name").value;
+			console.log(value);
+			for(ver cnt in value){
+				alert("警告");
+			}
+		}
+	</script>
+
 </main>
