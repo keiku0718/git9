@@ -16,16 +16,18 @@
 		<li><a href = "nagase.html">長瀬稜平</a></li>
 		<li><a href = "yoneda.html">米田圭伸</a></li>
 	</ul>
+
+	//alertボタン
 	<div><input type="text" id="name" name="name" maxlength="8" size="10"></div>
 	<div><button onclick="alertEvent()">アラート</button></div>
 	<script>
 		function alertEvent() {
-			var value = document.getElementById("name").value;
-			console.log(value);
-			for(ver cnt in value){
+			var a = document.getElementById("name").value;
+			for(var i = 0;i < a;i++){
 				alert("警告");
 			}
 		}
 	</script>
+	
 
 </main>
