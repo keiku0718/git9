@@ -8,28 +8,17 @@
 h1{
     text-align: center;
     margin: auto;
-    background: #00eaff;
 }
 .syokai{
     text-align: center;
     line-height: 15px;
 }
 
-ul{
-    display: flex;
-    margin-left: 350px;
-}
-
-
 .syokai{
     font-size: 130%;
     margin-top: 10px;
 }
 h2{
-    text-align: center;
-    margin: auto;
-}
-h3{
     text-align: center;
     margin: auto;
 }
@@ -53,3 +42,46 @@ h3{
     max-height: 380px;
     margin-left: 450px;
 }
+.bgcolor{
+    background-color: rgb(103, 103, 103);
+}
+
+* {
+    box-sizing: border-box;
+ }
+ body {
+    margin: 0;
+    padding: 0;
+    font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", メイリオ, Meiryo, "ＭＳ Ｐゴシック", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: black;
+ }
+ header {
+    padding: 30px 4% 10px;
+    position: fixed;
+    top: 0;
+    height: 30px;
+    width: 100%;
+    background-color:white;
+    display: flex;
+    align-items: center;
+ }
+ h4 {
+    margin: 0; padding: 0;
+    font-size: 20px;
+ }
+ p {	
+    text-decoration: none;
+    color: black;
+ }
+ nav {
+    margin: 0 0 0 auto;
+ }
+ ul {
+    list-style: none;
+    margin: 0;
+    display: flex;
+ }
+ li {
+    margin: 0 0 0 15px;
+    font-size: 14px;
+ }
