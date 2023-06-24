@@ -12,7 +12,7 @@
   <nav class="nav">
     <ul class="nav_menu">
       <li class="nav_menu_item"><a href="index.html">TOP</a></li>
-      <li class="nav_menu_item"><a href="umemura.html">梅村</a></li>
+      <li class="nav_menu_item"><a href="shingo.html">梅村</a></li>
       <li class="nav_menu_item"><a href="oota.html">太田</a></li>
       <li class="nav_menu_item"><a href="oka.html">岡</a></li>
       <li class="nav_menu_item" ><a href="sanaka.html">佐中</a></li>
@@ -24,65 +24,63 @@
 <body>
 <!-- TOP画像 -->
 <div class="top">
-  <p>長瀬稜平
-    好きな言葉：残り物には福がある
-  </p>
   <img src = "image/sakura.jpg"></div>
+</div>
+
+<div class = "ziko">
+  <p><font size = "6">名前:　長 瀬 稜 平<br>
+      趣味：　FGO<br>
+      好きな音楽：　ボーカロイド<br>
+      好きな言葉：　残り物には福がある<br>
+      好きな飲み物：ミルクティー<br>
+  </font></p>
 </div>
 
 <!-- コンテンツ -->
 <div class="content">
   <div class="content_item">
     <ul class="box">
-    <li class="scroll_up"><img src = "C:\Users\ku_mo\Dropbox\PC\Documents\班員紹介\班員紹介\image\S__26591259.jpg" alt=""></li>
-    </ul>
+      <div id="disp">
+    <li class="scroll_up"><img src = "C:\Users\ku_mo\Dropbox\PC\Documents\班員紹介\班員紹介\image\S__26591259.jpg" alt=""></li></div>
+    <input type="button" value="表示" onclick="hyoji(0)">
+    <input type="button" value="非表示" onclick="hyoji(1)">
+    <script>
+    
+        function hyoji(num)
+        {
+          if (num == 0)
+          {
+            document.getElementById("disp").style.display="block";
+          }
+          else
+          {
+            document.getElementById("disp").style.display="none";
+          }
+        }
+        
+        </script>
+  </ul>
+  </div>
+  <div class = "bun">
+    <h1>FGO</h1>
+    <p><font size = "4">長瀬オススメのゲーム！！<br>
+      そして推しキャラ！！<br></font>
+      <br>
+      <font size = "6"><b>「エレシュキガル」</b></font>
+    </p>
   </div>
 </div>
-
-<hr>
-    <button>表示</button>
     
     <!-- jQuery -->
     <script
     src="https://code.jquery.com/jquery-3.5.1.js"
     integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
     crossorigin="anonymous"></script>
-<table border="0" cellpadding="10" cellspacing="0">
-  <tr>
-    <td align="right">名前：</td>
-    <td>長瀬 稜平</td>
-  </tr>
-  <tr>
-    <td align="right">出身地：</td>
-    <td>岡山</td>
-  </tr>
-  <tr>
-    <td align="right">趣味：</td>
-    <td>FGO</td>
-  </tr>
-  <tr>
-    <td align="right">好きな音楽：</td>
-    <td>ボーカロイド</td>
-  </tr>
-  <tr>
-    <td align="right">好きな本：</td>
-    <td>ビブリア古書堂の事件手帖</td>
-  </tr>
-  <tr>
-    <td align="right">好きな言葉：</td>
-    <td>残り物には服がある</td>
-  </tr>
-  <tr>
-    <td align="right">好きな飲み物：</td>
-    <td>ミルクティー</td>
-  </tr>
-  <tr>
-    <td align="right">嫌いな食べ物：</td>
-    <td>激辛系</td>
-  </tr>
-</table>
-<hr>
-<p align="center"><a href="index.html">TOPへ</a></p>
+
 <script src="js/nagase.js"></script>
 </body>
+
+<footer>
+  <p>(c)copy right</p>
+</footer>
 </html>
