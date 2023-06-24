@@ -29,16 +29,34 @@
 		<li><a href = "nagase.html">長瀬稜平</a></li>
 		<li><a href = "yoneda.html">米田圭伸</a></li>
 	</ul>
+
+
+</main>
+<body>
+  <input type="button" value="おみくじを引く" onclick="drawFortune();"></input>
+  <div id="pos1"></div>
+  <script type="text/javascript">
+    // おみくじ関数
+    function drawFortune() {
+      var array = ['大吉','中吉','小吉','末吉','凶','大凶'];
+      var value = array[Math.floor(Math.random() * array.length)];
+      var id1 = document.getElementById('pos1');
+      id1.style.fontSize = "32pt";
+      id1.style.color = "blue";
+      id1.innerHTML = value;
+    }
+  </script>
+</body>
 	<div><input type="text" id="name" name="name" maxlength="8" size="10"></div>
 	<div><button onclick="alertEvent()">アラート</button></div>
 	<script>
 		function alertEvent() {
-			var value = document.getElementById("name").value;
-			console.log(value);
-			for(ver cnt in value){
+			var a = document.getElementById("name").value;
+			for(var i = 0;i < a;i++){
 				alert("警告");
 			}
 		}
 	</script>
+	
 
 </main>
