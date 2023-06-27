@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+  <html lang="js">
+    <head>
+      <meta charset=utf-8>
+      <meta name="viewprot" content="width=device-width, initial-scale=1.0">
+      <title>自己紹介</title>
+      <link rel = "stylesheet" href = "css/okastyle.css">
+    </head>
+
+    <header>
+      <h4>
+         <p href="/">MENMER</p>
+      </h4>
+      <nav class="pc-nav">
+         <ul>
+		      <ol><a href ="yoneda.html">米田</a></ol>
+		      <ol><a href ="nagase.html">長瀬</a></ol>
+		      <ol><a href ="sanaka.html">佐中</a></ol>
+		      <ol><a href ="oota.html">太田</a></ol>
+		      <ol><a href ="umemura.html">梅村</a></ol>
+         </ul>
+      </nav>
+   </header>
+
+  <div class="bgcolor"> 
+  <body>
+    <h1>班　員　紹　介</h1><br><br>
+    <img id="image" src="image/sample1.jpg" alt="画像" style="border: double;" />
+    <button id="button">表示/非表示</button>
+
+    <script>
+      document.addEventListener('DOMContentLoaded',function(){
+        var image = document.getElementById('image');
+        var togglebutton = document.getElementById('button');
+
+      togglebutton.addEventListener('click',function() {
+	      if(image.style.display === 'none'){
+		    image.style.display ='block';
+	     }else{
+		    image.style.display ='none';
+        }
+	      });
+      });
+    </script>
+
+    <div class = "syokai">
+      <p>名前：岡来未</p><br>
+      <p>出身地：岡山</p><br>
+      <p>趣味：ネットフリックス</p><br>
+      <p>好きな音楽：THE ORAL CIGARETTES</p><br>
+      <p>好きな本：都市伝説大百科</p><br>
+      <p>好きな飲み物：アップルティー</p><br>
+      <p>嫌いな食べ物：ミルメーク</p><br>
+    </div>
+
+    <hr>
+      <h2>班員からのコメント</h2>
+      <p>梅村：すごい</p>
+      <p>長瀬：good</p>
+      <p>米田：さっすが！</p>
+      <p>太田：やるやん</p>
+      <p>佐中：とても見やすかったです</p>
+    <hr>
+    <p align="center"><a href="index.html">TOP</a></p>
+  </div>  
+
+  </body>
+</html>

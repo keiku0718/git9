@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/ume.css">
+
+    <title>米田真吾</title>
+</head>    
+
+    <header><h1>梅村　真吾の紹介ページ</h1>
+
+    </header>
+    <hr>
+<body>   
+
+
+    <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script>
+    $(function(){
+    $('#btn1').click(function(event){
+        $('#view').hide(1000);  //1秒掛けて非表示にする
+    });
+    
+    $('#btn2').click(function(event){
+        $('#view').show(1000);  //1秒掛けて表示する
+    });
+    });
+    </script>
+
+    <div class = "center">
+
+        <input type="button" id="btn1" value="女梅">
+        <input type="button" id="btn2" value="男梅">
+        
+        <div class = "photo-button">
+
+            <div class = "photo">
+                <div id="view"><img src = "image/69496.jpg" alt = "shingo"></div>
+                <script src="mura.js"></script>
+
+            </div>
+
+                <div class = "button">
+                    <p>
+                    <span id="press-button">0</span>回
+                    </p>
+                    <input type="button" value="押せ！" onclick="counter()">
+                    <script src="mura.js" async></script>
+
+                    <script>
+                        var not = 0;
+                        function counter(){
+                        not++;
+                        document.getElementById("press-button").innerHTML = not;
+                        }
+                    </script>
+                </div>
+        </div>
+
+        <div class = "introduction">
+
+            <p>年齢：花の１９歳</p>
+            <p>誕生日:８月２６日</p>
+            <p>趣味:ASBEEでショッピング</p>
+            <p>好きな食べ物：ピッツァ</p>
+            <p>親の許可：承認済み</p><br><br><br>
+
+            <h2>班員からのメッセージ</h2>
+                <p>梅村：俺のことをよくわかっていていいWebページだった</p>
+                <p>長瀬：とても見やすかったです</p>
+                <p>太田：やるやん</p>
+                <p>岡：まとまっていてよかった！</p>
+                <p>佐中：俺のこと忘れやがって！</p>
+            </h2>
+            <p"><a href="index.html">TOPへ</a></p>
+            <div>
+                <a href = "umemura.html">梅村慎吾</a>
+                <a href = "oota.html">太田善晴</a>
+                <a href = "oka.html">岡来未</a>
+                <a href = "sanaka.html">佐中光希</a>
+                <a href = "nagase.html">長瀬稜平</a>
+                <a href = "yoneda.html">米田圭伸</a>
+            </div>
+        </div>
+        
+    </div>
+</body>
+
+</html>

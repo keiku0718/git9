@@ -1,0 +1,96 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel = "stylesheet" href = "css/nagase.css">
+<title>自己紹介</title>
+</head>
+
+<header class="header">
+  <!-- ヘッダーロゴ -->
+  <h2 class = "zikosyoukai"><span>自　己　紹　介</span></h2>
+  <!-- ナビゲーションメニュー -->
+  <nav class="nav">
+    <ul class="nav_menu">
+      <li class="nav_menu_item"><a href="index.html">TOP</a></li>
+      <li class="nav_menu_item"><a href="umemura.html">梅村</a></li>
+      <li class="nav_menu_item"><a href="oota.html">太田</a></li>
+      <li class="nav_menu_item"><a href="oka.html">岡</a></li>
+      <li class="nav_menu_item" ><a href="sanaka.html">佐中</a></li>
+      <li class="nav_menu_item" ><a href="yoneda.html">米田</a></li>
+    </ul>
+  </nav>
+</header>
+
+<body>
+<!-- TOP画像 -->
+<div class="top">
+  <img src = "image/sakura.jpg"></div>
+</div>
+
+<div class = "ziko">
+  <p><font size = "6">名前:　長 瀬 稜 平<br>
+      趣味：　FGO<br>
+      好きな音楽：　ボーカロイド<br>
+      好きな言葉：　残り物には福がある<br>
+      好きな飲み物：ミルクティー<br>
+  </font></p>
+</div>
+
+<!-- コンテンツ -->
+<div class="content">
+  <div class="content_item">
+    <ul class="box">
+      <div id="disp">
+    <li class="scroll_up"><img src = 'image/S__26591259.jpg' alt=""></li></div>
+    <input type="button" value="表示" onclick="hyoji(0)">
+    <input type="button" value="非表示" onclick="hyoji(1)">
+    <script>
+    
+        function hyoji(num){
+          if (num == 0)
+          {
+            document.getElementById("disp").style.display="block";
+          }
+          else
+          {
+            document.getElementById("disp").style.display="none";
+          }
+        }
+        
+        </script>
+  </ul>
+  </div>
+  <div class = "bun">
+    <br>
+    <h1>FGO</h1>
+    <p><font size = "4">長瀬オススメのゲーム！！<br>
+      そして推しキャラ！！<br></font>
+      <br>
+      <font size = "6"><b>「エレシュキガル」</b></font>
+    </p>
+  </div>
+</div>
+    
+    <!-- jQuery -->
+    <script
+    src="https://code.jquery.com/jquery-3.5.1.js"
+    integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous"></script>
+
+<script src="js/nagase.js"></script>
+<br>
+<div align="center">
+<h2>班員からのメッセージ</h2>
+  <p>梅村：すごい</p>
+  <p>岡：good</p>
+  <p>太田：やるやん</p>
+  <p>佐中：いいね</p>
+  <p>米田：さっすが！</p>
+</h2>
+</div>
+</body>
+
+<footer>
+  <p>(c)copy right</p>
+</footer>
+</html>
