@@ -1,0 +1,96 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" herf="style.css">
+<title>自己紹介</title>
+<script>
+//初期表示は非表示
+document.getElementById("p1").style.display ="none";
+
+function clickBtn1(){
+	const p1 = document.getElementById("p1");
+
+	if(p1.style.display=="block"){
+		// noneで非表示
+		p1.style.display ="none";
+	}else{
+		// blockで表示
+		p1.style.display ="block";
+	}
+}
+</script>
+</head>
+
+<body  bgcolor ="#10100E" text ="#cccccc">
+<h1>　　　　自　　己　　紹　　介</h1>
+<hr>
+    <div class="photo">
+        <img src="yutaka.jpg" id ="p1">
+        <input type="button" value="ボタン" onclick="clickBtn1()" />
+        
+    </div>
+<table border="0" cellpadding="10" cellspacing="0">
+  <tr>
+    <td align="left">名前：米田圭伸</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td align="left">誕生日：2月29日(閏年)</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td align="left">出身地：鳥取</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td align="left">趣味：バスケ、将棋</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td align="left">好きな音楽：I love you(尾崎豊)</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td align="left">好きな本：20代にやるべき10の事</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td align="left">好きな言葉：王手</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td align="left">好きな食べ物：ハンバーグ</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td align="left">嫌いな食べ物：飛車</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>班員からのコメント</td>
+  </tr>
+  <tr>
+  <td>長瀬:うどん食べたい</td>
+  </tr>
+  <tr>
+  <td>岡:大手</td>
+  </tr>
+  <tr>
+  <td>太田:お手合わせ願います</td>
+  </tr>
+  <tr>
+  <td>佐中:詰みました</td>
+  </tr>
+  <tr>
+  <td>梅村:お母さんにおばあちゃんだと思われてたよって言ったらショック受けてました</td>
+  </tr>
+</table>
+<hr>
+<a href="nagase.html">　長瀬　</a>
+<a href="oka.html">　岡　</a>
+<a href="oota.html">　太田　</a>
+<a href="sanaka.html">　佐中　</a>
+<a href="umemura.html">　梅村　</a>
+<p align="center"><a href="index.html">TOPへ</a></p>
+</body>
+</html>
